@@ -4,6 +4,9 @@ public class Cat extends Animal {
 
     private String badHabits;
 
+    public double getPrice() {
+        return super.price;
+    }
     public Cat(String name, Gender gender, String badHabits) {
         super(name, gender);
 
