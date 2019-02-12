@@ -8,10 +8,11 @@ import java.util.List;
 
 public class Webshop {
 
-    private List<Sellable> sellables = new ArrayList<Sellable>();
+    public List<Sellable> sellables = new ArrayList<Sellable>();
 
-    public void addProduct(String name, double price) {
-        sellables.add(new Product(name, price));
+    public void addProduct(Product product) {
+
+        sellables.add(product);
     }
 
     public void addDog(Dog dog) {
