@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<?import javafx.scene.control.ToggleGroup?>
+<VBox prefHeight="400.0" prefWidth="715.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="62.0" prefWidth="106.0" VBox.vgrow="ALWAYS">
+      <children>
+            <Pane layoutX="31.0" layoutY="56.0" prefHeight="250.0" prefWidth="184.0">
+               <children>
+                  <ComboBox layoutX="14.0" layoutY="46.0" prefWidth="150.0" promptText="Species">
+                      <items>
+                          <FXCollections fx:factory="observableArrayList">
+                              <String fx:id="dog" fx:value="Dog" />
+                              <String fx:id="cat" fx:value="Cat" />
+                          </FXCollections>
+                      </items>
+                  </ComboBox>
+                  <Label layoutY="-1.0" text="Adding:">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="14.0" layoutY="83.0" promptText="Name" />
+                  <Pane layoutX="19.0" layoutY="109.0" prefHeight="54.0" prefWidth="139.0">
+                     <children>
+                         <fx:define>
+                             <ToggleGroup fx:id="toggleGroup1"/>
+                         </fx:define>
+                        <RadioButton layoutX="-1.0" layoutY="32.0" mnemonicParsing="false" text="Male" toggleGroup="$toggleGroup1"/>
+                        <RadioButton layoutX="67.0" layoutY="32.0" mnemonicParsing="false" text="Female" toggleGroup="$toggleGroup1"/>
+                        <Label layoutY="6.0" text="Gender:" />
+                     </children>
+                  </Pane>
+                  <TextField layoutX="15.0" layoutY="171.0" promptText="Bad Habits" />
+                  <Button layoutX="14.0" layoutY="208.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" text="Add Animal" />
+               </children>
+            </Pane>
+            <Pane layoutX="215.0" layoutY="56.0" prefHeight="118.0" prefWidth="376.0">
+               <children>
+                  <Label layoutY="-1.0" text="Animals:">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <ListView layoutY="30.0" prefHeight="79.0" prefWidth="376.0" />
+               </children>
+            </Pane>
+            <Pane layoutX="215.0" layoutY="181.0" prefHeight="98.0" prefWidth="244.0">
+               <children>
+                  <Label layoutY="-1.0" text="Reserve animal:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="14.0" layoutY="36.0" promptText="Name" />
+                  <Button layoutX="171.0" layoutY="36.0" mnemonicParsing="false" text="Reserve" />
+               </children>
+            </Pane>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
