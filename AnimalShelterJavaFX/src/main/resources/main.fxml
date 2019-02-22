@@ -33,17 +33,15 @@
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <TextField layoutX="14.0" layoutY="83.0" promptText="Name" />
+                  <TextField fx:id="txtName" layoutX="14.0" layoutY="83.0" promptText="Name" />
                   <Pane layoutX="19.0" layoutY="109.0" prefHeight="54.0" prefWidth="139.0">
                      <children>
-                         <fx:define>
-                             <ToggleGroup fx:id="toggleGroup1" />
-                         </fx:define>
-                        <RadioButton layoutX="-1.0" layoutY="32.0" mnemonicParsing="false" text="Male">
-                           <toggleGroup>
-                              <ToggleGroup fx:id="toggleGroup1" />
-                           </toggleGroup></RadioButton>
-                        <RadioButton layoutX="67.0" layoutY="32.0" mnemonicParsing="false" text="Female" toggleGroup="$toggleGroup1" />
+<!--                         <fx:define>
+                             <ToggleGroup fx:id="toggleGroupGender" />
+                         </fx:define>-->
+                        <RadioButton fx:id="tglMale" layoutX="-1.0" layoutY="32.0" mnemonicParsing="false" text="Male" />
+
+                        <RadioButton fx:id="tglFemale" layoutX="67.0" layoutY="32.0" mnemonicParsing="false" text="Female" />
                         <Label layoutY="6.0" text="Gender:" />
                      </children>
                   </Pane>
@@ -58,7 +56,7 @@
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <ListView layoutY="30.0" prefHeight="79.0" prefWidth="376.0" />
+                  <ListView fx:id="lstAnimals" layoutY="30.0" prefHeight="79.0" prefWidth="376.0" />
                </children>
             </Pane>
             <Pane layoutX="215.0" layoutY="181.0" prefHeight="98.0" prefWidth="244.0">

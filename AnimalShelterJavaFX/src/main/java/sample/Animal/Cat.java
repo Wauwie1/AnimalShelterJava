@@ -4,9 +4,16 @@ public class Cat extends Animal {
 
     private String badHabits;
 
+    public void setBadHabits(String badHabits) {
+        this.badHabits = badHabits;
+    }
+
+    public String getBadHabbits(){
+        return badHabits;
+    }
+
     public Cat(String name, Gender gender, String badHabits) {
         super(name, gender);
-
         this.badHabits = badHabits;
         super.price = calculatePrice();
     }
@@ -24,4 +31,6 @@ public class Cat extends Animal {
             return 35;
         }
     }
+
+
 }

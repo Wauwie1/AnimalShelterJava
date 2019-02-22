@@ -1,6 +1,8 @@
 package sample.Webshop;
 
-import Animal.Dog;
+
+
+import sample.Animal.Dog;
 
 import java.util.ArrayList;
 import java.util.Collections;
