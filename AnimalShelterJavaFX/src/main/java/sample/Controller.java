@@ -64,7 +64,6 @@ public class Controller implements Initializable {
         AnimalFactory animalFactory = new AnimalFactory();
         Gender selectedGender = (Gender) tglgGender.getSelectedToggle().getUserData();
         Animal animal = animalFactory.MakeAnimal(selectedSpecies, txtName.getText(), selectedGender, txtBadHabits.getText());
-
         lstAnimals.getItems().add(animal);
     }
 
@@ -108,8 +107,10 @@ public class Controller implements Initializable {
     public void btnSell_Click(ActionEvent actionEvent) {
         Animal selectedAnimal = (Animal) lstAnimals.getSelectionModel().getSelectedItem();
 
+
         if (selectedAnimal != null) {
-            webshop.addProduct(selectedAnimal.getName(), selectedAnimal.getPrice());
+            webshop.addObserver(selectedAnimal);
+            webshop.addAnimal(selectedAnimal);
             lstAnimals.refresh();
         } else {
             System.out.println("No animal selected.");

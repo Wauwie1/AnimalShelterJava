@@ -33,6 +33,10 @@ public abstract class Animal extends Sellable {
         }
     }
 
+    public void update() {
+        
+    }
+
 
     public String toString() {
         String reserved = "not reserved";

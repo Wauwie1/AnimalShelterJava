@@ -16,6 +16,7 @@ public class Dog extends Animal {
         super(name, gender);
         Calendar.getInstance().getTime();
         this.lastWalk = lastWalk;
+        this.price = 550;
     }
 
     public boolean needsWalk()
@@ -27,9 +28,17 @@ public class Dog extends Animal {
         }
     }
 
+    @Override
+    public void update() {
+        System.out.println(this.name + " updated");
+        if(price != 50) {
+            this.price -= 50;
+        }
+    }
+
     public String toString()
     {
         return super.toString() + String.format(", last walk: %s.", this.lastWalk.toString()
-        );
+        + " Price: " + this.price);
     }
 }
