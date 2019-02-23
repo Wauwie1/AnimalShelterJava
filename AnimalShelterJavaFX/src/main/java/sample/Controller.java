@@ -1,5 +1,6 @@
 package sample;
 
+import javafx.collections.ListChangeListener;
 import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
@@ -8,6 +9,9 @@ import sample.Animal.AnimalFactory;
 import sample.Animal.Cat;
 import sample.Animal.Gender;
 import sample.Webshop.Product;
+import sample.Webshop.Sellable;
+import sample.Webshop.SellableFactory;
+import sample.Webshop.Webshop;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -28,14 +32,19 @@ public class Controller implements Initializable {
     public RadioButton tglMale;
     public RadioButton tglFemale;
     public Button btnReserve;
+    public Button btnSell;
     public TextField txtResName;
     //
+
+    private Webshop webshop = new Webshop();
 
     private String selectedSpecies;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         initToggle();
+        lstWebshop.setItems(webshop.getSellables());
+        webshop.getSellables().addListener((ListChangeListener) change -> lstWebshop.refresh());
     }
 
     private void initToggle() {
@@ -93,8 +102,23 @@ public class Controller implements Initializable {
 
     private void addProduct() {
         Double price = Double.parseDouble(txtProdPrice.getText());
-        Product product = new Product(txtProdName.getText(), price);
-        System.out.println(product);
-        lstWebshop.getItems().add(product);
+        webshop.addProduct(txtProdName.getText(), price);
+    }
+
+    public void btnSell_Click(ActionEvent actionEvent) {
+        Animal selectedAnimal = (Animal) lstAnimals.getSelectionModel().getSelectedItem();
+
+        if (selectedAnimal != null) {
+            webshop.addProduct(selectedAnimal.getName(), selectedAnimal.getPrice());
+            lstAnimals.refresh();
+        } else {
+            System.out.println("No animal selected.");
+        }
+    }
+
+    public void btnBuy_Click(ActionEvent actionEvent) {
+        Sellable selectedSellable= (Sellable)lstWebshop.getSelectionModel().getSelectedItem();
+        webshop.sellProduct(selectedSellable);
+
     }
 }

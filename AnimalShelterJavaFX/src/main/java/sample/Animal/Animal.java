@@ -8,9 +8,7 @@ public abstract class Animal extends Sellable {
     private Gender gender;
     private Reservor reservedBy;
 
-    public String getName() {
-        return this.name;
-    }
+
 
     public Gender getGender() {
         return this.gender;

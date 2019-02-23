@@ -58,15 +58,16 @@
                   <ListView fx:id="lstAnimals" layoutY="30.0" prefHeight="79.0" prefWidth="376.0" />
                </children>
             </Pane>
-            <Pane layoutX="215.0" layoutY="181.0" prefHeight="98.0" prefWidth="244.0">
+            <Pane layoutX="215.0" layoutY="181.0" prefHeight="143.0" prefWidth="244.0">
                <children>
-                  <Label layoutY="-1.0" text="Reserve animal:">
+                  <Label layoutY="-1.0" text="Reserve/Sell animal:">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </Label>
                   <TextField fx:id="txtResName" layoutX="14.0" layoutY="36.0" promptText="Name" />
                   <Button fx:id="btnReserve" layoutX="171.0" layoutY="36.0" mnemonicParsing="false" onAction="#btnReserve_Click" text="Reserve" />
+                  <Button fx:id="btnSell" layoutX="14.0" layoutY="98.0" mnemonicParsing="false" onAction="#btnSell_Click" text="Sell animal" />
                </children>
             </Pane>
             <Pane layoutX="625.0" layoutY="56.0" prefHeight="110.0" prefWidth="192.0">
@@ -91,6 +92,7 @@
                   <Button fx:id="btnProdAdd" layoutX="152.0" layoutY="116.0" mnemonicParsing="false" onAction="#btnProdAdd_Click" text="Add" />
                </children>
             </Pane>
+            <Button fx:id="btnBuy" layoutX="832.0" layoutY="111.0" mnemonicParsing="false" onAction="#btnBuy_Click" text="Buy" />
       </children>
     </AnchorPane>
   </children>

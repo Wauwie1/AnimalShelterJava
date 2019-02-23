@@ -7,7 +7,5 @@ public class Product extends Sellable {
         super.price = price;
     }
 
-    public String toString(){
-        return this.name + ": " + this.price;
-    }
+
 }
