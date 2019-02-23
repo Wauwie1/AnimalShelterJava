@@ -7,4 +7,5 @@ public abstract class Sellable {
     protected Sellable(String name) {
         this.name = name;
     }
+
 }

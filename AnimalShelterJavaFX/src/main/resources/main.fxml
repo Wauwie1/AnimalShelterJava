@@ -13,9 +13,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="715.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<VBox prefHeight="400.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
   <children>
-    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="62.0" prefWidth="106.0" VBox.vgrow="ALWAYS">
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="400.0" prefWidth="965.0" VBox.vgrow="ALWAYS">
       <children>
             <Pane layoutX="31.0" layoutY="56.0" prefHeight="250.0" prefWidth="184.0">
                <children>
@@ -67,6 +67,28 @@
                   </Label>
                   <TextField fx:id="txtResName" layoutX="14.0" layoutY="36.0" promptText="Name" />
                   <Button fx:id="btnReserve" layoutX="171.0" layoutY="36.0" mnemonicParsing="false" onAction="#btnReserve_Click" text="Reserve" />
+               </children>
+            </Pane>
+            <Pane layoutX="625.0" layoutY="56.0" prefHeight="110.0" prefWidth="192.0">
+               <children>
+                  <Label layoutY="-1.0" text="Webshop:">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <ListView fx:id="lstWebshop" layoutY="30.0" prefHeight="79.0" prefWidth="193.0" />
+               </children>
+            </Pane>
+            <Pane layoutX="625.0" layoutY="181.0" prefHeight="161.0" prefWidth="244.0">
+               <children>
+                  <Label layoutY="-1.0" text="Product toevoegen:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtProdName" layoutX="14.0" layoutY="36.0" promptText="Name" />
+                  <TextField fx:id="txtProdPrice" layoutX="14.0" layoutY="73.0" promptText="Price" />
+                  <Button fx:id="btnProdAdd" layoutX="152.0" layoutY="116.0" mnemonicParsing="false" onAction="#btnProdAdd_Click" text="Add" />
                </children>
             </Pane>
       </children>
