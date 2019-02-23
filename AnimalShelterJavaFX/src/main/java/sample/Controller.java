@@ -13,6 +13,7 @@ import java.util.ResourceBundle;
 
 public class Controller implements Initializable {
 
+    // Controls
     public Button btnAddAnimal;
     public ComboBox cmbSpecies;
     public TextField txtBadHabits;
@@ -21,6 +22,10 @@ public class Controller implements Initializable {
     public ToggleGroup tglgGender;
     public RadioButton tglMale;
     public RadioButton tglFemale;
+    public Button btnReserve;
+    public TextField txtResName;
+    //
+
     private String selectedSpecies;
 
     @Override
@@ -52,6 +57,17 @@ public class Controller implements Initializable {
             txtBadHabits.setDisable(false);
         }else {
             txtBadHabits.setDisable(true);
+        }
+    }
+
+    public void btnReserve_Click(ActionEvent actionEvent) {
+        Animal selectedAnimal = (Animal)lstAnimals.getSelectionModel().getSelectedItem();
+
+        if(selectedAnimal != null) {
+            selectedAnimal.reserve(txtResName.getText());
+            lstAnimals.refresh();
+        }else{
+            System.out.println("No animal selected.");
         }
     }
 }

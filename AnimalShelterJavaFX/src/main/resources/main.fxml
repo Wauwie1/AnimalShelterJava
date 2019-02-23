@@ -8,7 +8,6 @@
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
@@ -66,8 +65,8 @@
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <TextField layoutX="14.0" layoutY="36.0" promptText="Name" />
-                  <Button layoutX="171.0" layoutY="36.0" mnemonicParsing="false" text="Reserve" />
+                  <TextField fx:id="txtResName" layoutX="14.0" layoutY="36.0" promptText="Name" />
+                  <Button fx:id="btnReserve" layoutX="171.0" layoutY="36.0" mnemonicParsing="false" onAction="#btnReserve_Click" text="Reserve" />
                </children>
             </Pane>
       </children>
