@@ -40,7 +40,9 @@ public class Webshop {
     }
 
     public void addAnimal(Animal animal){
+        animalObservers.add(animal);
         sellables.add(animal);
+
         notifyObservers();
     }
 
