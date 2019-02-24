@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="400.0" prefWidth="965.0" VBox.vgrow="ALWAYS">
+      <children>
+            <Pane layoutX="31.0" layoutY="56.0" prefHeight="250.0" prefWidth="184.0">
+               <children>
+                  <ComboBox fx:id="cmbSpecies" layoutX="14.0" layoutY="46.0" onAction="#cmbSpecies_Changed" prefWidth="150.0" promptText="Species">
+                      <items>
+                          <FXCollections fx:factory="observableArrayList">
+                              <String fx:id="dog" fx:value="Dog" />
+                              <String fx:id="cat" fx:value="Cat" />
+                          </FXCollections>
+                      </items>
+                  </ComboBox>
+                  <Label layoutY="-1.0" text="Adding:">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtName" layoutX="14.0" layoutY="83.0" promptText="Name" />
+                  <Pane layoutX="19.0" layoutY="109.0" prefHeight="54.0" prefWidth="139.0">
+                     <children>
+<!--                         <fx:define>
+                             <ToggleGroup fx:id="toggleGroupGender" />
+                         </fx:define>-->
+                        <RadioButton fx:id="tglMale" layoutX="-1.0" layoutY="32.0" mnemonicParsing="false" text="Male" />
+
+                        <RadioButton fx:id="tglFemale" layoutX="67.0" layoutY="32.0" mnemonicParsing="false" text="Female" />
+                        <Label layoutY="6.0" text="Gender:" />
+                     </children>
+                  </Pane>
+                  <TextField fx:id="txtBadHabits" layoutX="15.0" layoutY="171.0" promptText="Bad Habits" />
+                  <Button fx:id="btnAddAnimal" layoutX="14.0" layoutY="208.0" mnemonicParsing="false" onAction="#btnAddAnimal_Click" prefHeight="26.0" prefWidth="150.0" text="Add Animal" />
+               </children>
+            </Pane>
+            <Pane layoutX="215.0" layoutY="56.0" prefHeight="118.0" prefWidth="376.0">
+               <children>
+                  <Label layoutY="-1.0" text="Animals:">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <ListView fx:id="lstAnimals" layoutY="30.0" prefHeight="79.0" prefWidth="376.0" />
+               </children>
+            </Pane>
+            <Pane layoutX="215.0" layoutY="181.0" prefHeight="143.0" prefWidth="244.0">
+               <children>
+                  <Label layoutY="-1.0" text="Reserve/Sell animal:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtResName" layoutX="14.0" layoutY="36.0" promptText="Name" />
+                  <Button fx:id="btnReserve" layoutX="171.0" layoutY="36.0" mnemonicParsing="false" onAction="#btnReserve_Click" text="Reserve" />
+                  <Button fx:id="btnSell" layoutX="14.0" layoutY="98.0" mnemonicParsing="false" onAction="#btnSell_Click" text="Sell animal" />
+               </children>
+            </Pane>
+            <Pane layoutX="625.0" layoutY="56.0" prefHeight="110.0" prefWidth="192.0">
+               <children>
+                  <Label layoutY="-1.0" text="Webshop:">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <ListView fx:id="lstWebshop" layoutY="30.0" prefHeight="79.0" prefWidth="193.0" />
+               </children>
+            </Pane>
+            <Pane layoutX="625.0" layoutY="181.0" prefHeight="161.0" prefWidth="244.0">
+               <children>
+                  <Label layoutY="-1.0" text="Product toevoegen:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtProdName" layoutX="14.0" layoutY="36.0" promptText="Name" />
+                  <TextField fx:id="txtProdPrice" layoutX="14.0" layoutY="73.0" promptText="Price" />
+                  <Button fx:id="btnProdAdd" layoutX="152.0" layoutY="116.0" mnemonicParsing="false" onAction="#btnProdAdd_Click" text="Add" />
+               </children>
+            </Pane>
+            <Button fx:id="btnBuy" layoutX="832.0" layoutY="111.0" mnemonicParsing="false" onAction="#btnBuy_Click" text="Buy" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
