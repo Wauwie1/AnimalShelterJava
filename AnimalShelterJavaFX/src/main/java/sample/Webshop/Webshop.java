@@ -3,10 +3,12 @@ import javafx.collections.FXCollections;
 import javafx.collections.ListChangeListener;
 import javafx.collections.ObservableList;
 import sample.Animal.Animal;
+
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Webshop {
+public class Webshop implements Serializable {
 
     private List<Sellable> sellableList = new ArrayList<Sellable>();;
     private ObservableList<Sellable> sellables;
