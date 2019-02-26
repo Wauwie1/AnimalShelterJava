@@ -65,6 +65,9 @@ public class Controller implements Initializable {
         Gender selectedGender = (Gender) tglgGender.getSelectedToggle().getUserData();
         Animal animal = animalFactory.MakeAnimal(selectedSpecies, txtName.getText(), selectedGender, txtBadHabits.getText());
         lstAnimals.getItems().add(animal);
+
+        webshop.notifyObservers();
+        webshop.addObserver(animal);
     }
 
     public void cmbSpecies_Changed(ActionEvent actionEvent) {
@@ -109,7 +112,6 @@ public class Controller implements Initializable {
 
 
         if (selectedAnimal != null) {
-            webshop.addObserver(selectedAnimal);
             webshop.addAnimal(selectedAnimal);
             lstAnimals.refresh();
         } else {

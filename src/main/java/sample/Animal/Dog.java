@@ -16,7 +16,7 @@ public class Dog extends Animal {
         super(name, gender);
         Calendar.getInstance().getTime();
         this.lastWalk = lastWalk;
-        this.price = 550;
+        this.price = 500;
     }
 
     public boolean needsWalk()

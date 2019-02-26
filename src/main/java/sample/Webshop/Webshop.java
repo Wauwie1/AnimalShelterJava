@@ -42,10 +42,11 @@ public class Webshop implements Serializable {
     }
 
     public void addAnimal(Animal animal){
-        animalObservers.add(animal);
+        // notifyObservers();
+       // addObserver(animal);
         sellables.add(animal);
 
-        notifyObservers();
+
     }
 
     public void sellProduct(Sellable sellable) {

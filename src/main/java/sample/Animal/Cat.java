@@ -19,7 +19,9 @@ public class Cat extends Animal {
     }
 
     public String toString() {
-        return super.toString() + String.format(", bad habits: %s", this.badHabits.toLowerCase());
+        return super.toString() + String.format(", bad habits: %s. Price: %s",
+                                            this.badHabits.toLowerCase(),
+                                            this.price);
     }
 
     private double calculatePrice() {
