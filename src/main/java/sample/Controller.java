@@ -113,6 +113,8 @@ public class Controller implements Initializable {
 
         if (selectedAnimal != null) {
             webshop.addAnimal(selectedAnimal);
+            int i = lstAnimals.getItems().indexOf(selectedAnimal);
+            lstAnimals.getItems().remove(i);
             lstAnimals.refresh();
         } else {
             System.out.println("No animal selected.");
