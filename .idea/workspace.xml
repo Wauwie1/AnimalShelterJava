@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d7e4568-74b9-43b5-9d78-4d87111de74b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/AnimalShelterJavaFX/src/test/java/Animal/AnimalTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AnimalShelterJavaFX/src/test/java/Animal/CatTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AnimalShelterJavaFX/src/test/java/Animal/DogTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AnimalShelterJavaFX/src/test/java/Animal/ReservorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AnimalShelterJavaFX/src/test/java/Webshop/ProductTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AnimalShelterJavaFX/src/test/java/Webshop/WebshopTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnimalShelterJavaFX/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalShelterJavaFX/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnimalShelterJavaFX/src/main/java/sample/Webshop/Sellable.java" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalShelterJavaFX/src/main/java/sample/Webshop/Sellable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnimalShelterJavaFX/src/main/java/sample/Webshop/Webshop.java" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalShelterJavaFX/src/main/java/sample/Webshop/Webshop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -53,7 +45,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Webshop/WebshopTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
+            <state relative-caret-position="136">
               <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
               <folding>
                 <element signature="e#365#366#0" expanded="true" />
@@ -65,8 +57,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="10" selection-start-line="10" selection-end-line="15" selection-end-column="21" />
+            <state relative-caret-position="153">
+              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -124,7 +116,15 @@
         <option value="$PROJECT_DIR$/src/main/java/Webshop/Webshop.java" />
         <option value="$PROJECT_DIR$/src/test/java/Webshop/WebshopTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/Animal/AnimalTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -314,6 +314,8 @@
       <workItem from="1549380830958" duration="892000" />
       <workItem from="1549959490677" duration="4869000" />
       <workItem from="1550933768492" duration="666000" />
+      <workItem from="1551045938374" duration="1791000" />
+      <workItem from="1551085860986" duration="600000" />
     </task>
     <servers />
   </component>
@@ -350,13 +352,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6427000" />
+    <option name="totallyTimeSpent" value="8818000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16510066" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16912752" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -511,6 +512,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Webshop/WebshopTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+          <folding>
+            <element signature="e#365#366#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Animal/AnimalTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="799">
@@ -528,20 +539,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Webshop/WebshopTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-          <folding>
-            <element signature="e#365#366#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="10" selection-start-line="10" selection-end-line="15" selection-end-column="21" />
+        <state relative-caret-position="153">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
         </state>
       </provider>
     </entry>
