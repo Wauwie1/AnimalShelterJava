@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc9199b6-e808-46de-bd6f-8654e3441d43" name="Default Changelist" comment="" />
+    <list default="true" id="cc9199b6-e808-46de-bd6f-8654e3441d43" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Animal/AnimalFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Animal/AnimalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Animal/AnimalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Animal/CatTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Animal/CatTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Animal/DogTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Animal/DogTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Webshop/WebshopTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Webshop/WebshopTest.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -9,71 +16,44 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/AnimalShelterJavaFX$All_in_AnimalShelterJavaFX.ic" NAME="All in AnimalShelterJavaFX Coverage Results" MODIFIED="1551180220261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="215" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sample/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/sample/Animal/Cat.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
+            <state relative-caret-position="269">
               <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sample/Animal/Dog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sample/Animal/Animal.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-339">
-              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sample/Webshop/Webshop.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Animal/CatTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="44" column="8" lean-forward="true" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
+            <state relative-caret-position="293">
+              <caret line="49" column="48" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
               <folding>
-                <element signature="e#822#823#0" expanded="true" />
-                <element signature="e#865#866#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sample/Controller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-114">
-              <caret line="68" column="34" selection-start-line="68" selection-start-column="34" selection-end-line="68" selection-end-column="34" />
-              <folding>
-                <element signature="method#specieChange#0;class#Controller#0" />
-                <element signature="method#reserve#0;class#Controller#0" />
+                <element signature="e#931#932#0" expanded="true" />
+                <element signature="e#961#962#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -82,8 +62,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/sample/Animal/Cat.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sample/Controller.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/Webshop/Webshop.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/Controller.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Animal/AnimalTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Webshop/WebshopTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Animal/DogTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Animal/AnimalFactoryTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Animal/CatTest.java" />
       </list>
     </option>
   </component>
@@ -92,7 +77,9 @@
     <option name="width" value="980" />
     <option name="height" value="1040" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -106,6 +93,11 @@
             <path>
               <item name="AnimalShelterJavaFX" type="b2602c69:ProjectViewProjectNode" />
               <item name="AnimalShelterJava" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AnimalShelterJavaFX" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AnimalShelterJava" type="462c0819:PsiDirectoryNode" />
+              <item name="AnimalShelterJavaFX" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AnimalShelterJavaFX" type="b2602c69:ProjectViewProjectNode" />
@@ -151,6 +143,27 @@
               <item name="sample" type="462c0819:PsiDirectoryNode" />
               <item name="Webshop" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="AnimalShelterJavaFX" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AnimalShelterJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AnimalShelterJavaFX" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AnimalShelterJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AnimalShelterJavaFX" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AnimalShelterJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Animal" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -160,7 +173,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551177714422" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551180218255" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -178,7 +191,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.All in AnimalShelterJavaFX">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sample.Main" />
       <module name="AnimalShelterJavaFX" />
@@ -192,8 +205,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All in AnimalShelterJavaFX" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AnimalShelterJavaFX" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in AnimalShelterJavaFX" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -209,18 +231,31 @@
       <option name="presentableId" value="Default" />
       <updated>1551175890546</updated>
       <workItem from="1551175894157" duration="347000" />
-      <workItem from="1551176629697" duration="945000" />
+      <workItem from="1551176629697" duration="3580000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="All_in_AnimalShelterJavaFX - 2019.02.26 at 11h 47m 14s.xml">
+      <configuration name="All in AnimalShelterJavaFX" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_AnimalShelterJavaFX - 2019.02.26 at 11h 48m 34s.xml">
+      <configuration name="All in AnimalShelterJavaFX" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_AnimalShelterJavaFX - 2019.02.26 at 11h 49m 08s.xml">
+      <configuration name="All in AnimalShelterJavaFX" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_AnimalShelterJavaFX - 2019.02.26 at 12h 19m 07s.xml">
+      <configuration name="All in AnimalShelterJavaFX" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1292000" />
+    <option name="totallyTimeSpent" value="3927000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25302014" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25704697" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -229,7 +264,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -240,6 +275,7 @@
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3286119" />
+      <window_info anchor="right" id="Coverage" side_tool="true" visible="true" weight="0.3295302" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -255,13 +291,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Animal/Cat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/module-info.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -276,13 +305,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sample/Animal/Dog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -290,10 +312,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Webshop/WebshopTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="62" column="24" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Animal/DogTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="47" column="101" selection-start-line="47" selection-start-column="101" selection-end-line="47" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sample/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-114">
-          <caret line="68" column="34" selection-start-line="68" selection-start-column="34" selection-end-line="68" selection-end-column="34" />
+        <state relative-caret-position="2">
+          <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
           <folding>
             <element signature="method#specieChange#0;class#Controller#0" />
             <element signature="method#reserve#0;class#Controller#0" />
@@ -301,13 +344,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Webshop/SellableFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sample/Webshop/Webshop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="44" column="8" lean-forward="true" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
+        <state relative-caret-position="204">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="e#822#823#0" expanded="true" />
             <element signature="e#865#866#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Animal/AnimalFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Animal/AnimalTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="63" column="101" selection-start-line="63" selection-start-column="101" selection-end-line="63" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Animal/ReservorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Animal/AnimalFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#229#230#0" expanded="true" />
+            <element signature="e#277#278#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Animal/Cat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Animal/CatTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="49" column="48" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
+          <folding>
+            <element signature="e#931#932#0" expanded="true" />
+            <element signature="e#961#962#0" expanded="true" />
           </folding>
         </state>
       </provider>

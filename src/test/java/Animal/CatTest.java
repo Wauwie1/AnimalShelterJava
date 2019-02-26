@@ -35,7 +35,18 @@ class CatTest {
 
     @Test
     void testToString(){
-        String expected = "Mies, Female, not reserved, bad habits: krast";
+        String expected = "Mies, Female, not reserved, bad habits: krast. Price: 250.0";
         assertEquals(expected, cat.toString());
+    }
+
+    @Test
+    void testGetBadHabits(){
+        assertEquals("Krast", cat.getBadHabbits());
+    }
+
+    @Test
+    void testSetBadHabits(){
+        cat.setBadHabits("Stom");
+        assertEquals("Stom", cat.getBadHabbits());
     }
 }

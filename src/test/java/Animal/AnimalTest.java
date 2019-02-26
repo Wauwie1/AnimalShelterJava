@@ -61,7 +61,7 @@ class AnimalTest {
 
     @Test
     void testToString() {
-        String expected = "Rex, Male, not reserved, last walk: Tue Feb 11 00:00:00 CET 2014 Price: 550.0.";
+        String expected = "Rex, Male, not reserved, last walk: Tue Feb 11 00:00:00 CET 2014 Price: 500.0.";
 
         assertEquals(expected, dog.toString());
     }

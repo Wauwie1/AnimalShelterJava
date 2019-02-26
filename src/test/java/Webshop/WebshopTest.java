@@ -60,7 +60,7 @@ class WebshopTest {
         Dog dog2 = new Dog("Regina", Gender.Female, new GregorianCalendar(2014, Calendar.FEBRUARY, 11).getTime());
         webshop.addAnimal(dog);
         webshop.addAnimal(dog2);
-        assertEquals(450.0, webshop.getSellables().get(0).getPrice());
+        assertEquals(500.0, webshop.getSellables().get(0).getPrice());
     }
 //    @Test
 //    void addDog2() {
