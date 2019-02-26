@@ -1,8 +1,11 @@
 package Animal;
 
 import org.junit.jupiter.api.*;
+import sample.Animal.Cat;
+import sample.Animal.Gender;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class CatTest {
 

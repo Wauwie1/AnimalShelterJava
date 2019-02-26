@@ -3,12 +3,15 @@ package Animal;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import sample.Animal.Dog;
+import sample.Animal.Gender;
 
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class DogTest {
 
@@ -42,7 +45,7 @@ class DogTest {
 
     @Test
     void testToString() {
-        String expected = "Rex, Male, not reserved, last walk: Tue Feb 11 00:00:00 CET 2014";
+        String expected = "Rex, Male, not reserved, last walk: Tue Feb 11 00:00:00 CET 2014 Price: 550.0.";
 
         assertEquals(expected, dog.toString());
     }

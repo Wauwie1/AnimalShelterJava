@@ -1,11 +1,13 @@
 package Animal;
 
 import org.junit.jupiter.api.Test;
+import sample.Animal.Reservor;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ReservorTest {
 

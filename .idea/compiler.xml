@@ -6,8 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="AnimalShelterJava" />
+        <module name="AnimalShelterJavaFX" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="AnimalShelterJavaFX" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
