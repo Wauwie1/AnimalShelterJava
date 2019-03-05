@@ -10,9 +10,13 @@ import java.util.List;
 
 public class Webshop implements Serializable {
 
-    private List<Sellable> sellableList = new ArrayList<Sellable>();;
+    private List<Sellable> sellableList = new ArrayList<Sellable>();
     private ObservableList<Sellable> sellables;
     private List<Animal> animalObservers = new ArrayList<Animal>();
+
+    public List<Animal> getAnimalObservers() {
+        return animalObservers;
+    }
 
     public ObservableList<Sellable> getSellables() {
         return sellables;
@@ -34,6 +38,11 @@ public class Webshop implements Serializable {
         notifyObservers();
     }
 
+    public void addProduct(Product product) {
+        sellables.add(product);
+        notifyObservers();
+    }
+
 
     public void notifyObservers() {
         for (Animal animal : this.animalObservers) {
@@ -42,11 +51,7 @@ public class Webshop implements Serializable {
     }
 
     public void addAnimal(Animal animal){
-        // notifyObservers();
-       // addObserver(animal);
         sellables.add(animal);
-
-
     }
 
     public void sellProduct(Sellable sellable) {
