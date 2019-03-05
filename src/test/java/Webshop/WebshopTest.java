@@ -60,29 +60,24 @@ class WebshopTest {
         Dog dog2 = new Dog("Regina", Gender.Female, new GregorianCalendar(2014, Calendar.FEBRUARY, 11).getTime());
         webshop.addAnimal(dog);
         webshop.addAnimal(dog2);
-        assertEquals(450.0, webshop.getSellables().get(0).getPrice());
+        assertEquals(500.0, webshop.getSellables().get(0).getPrice());
     }
-//    @Test
-//    void addDog2() {
-//        Dog dog = new Dog("Regina", Gender.Female, new Date());
-//        Dog dog2 = new Dog("Rex", Gender.Male, new Date());
-//        Dog dog3 = new Dog("Floef", Gender.Female, new Date());
-//        webshop.addDog(dog);
-//        webshop.addDog(dog2);
-//        webshop.addDog(dog3);
-//        assertEquals(3, webshop.sellables.size());
-//        assertEquals(500, webshop.sellables.get(2).price);
-//        assertEquals(450, webshop.sellables.get(1).price);
-//        assertEquals(400, webshop.sellables.get(0).price);
-//
-//    }
-//
-//    @Test
-//    void sellProduct() {
-//        Product product = new Product("Artiekel", 99.99);
-//        webshop.addProduct(product);
-//        assertEquals(1, webshop.sellables.size());
-//        webshop.sellProduct(product);
-//        assertEquals(0, webshop.sellables.size());
-//    }
+
+    @Test
+    void testAddObserver() {
+        assertEquals(0, webshop.getAnimalObservers().size());
+        webshop.addObserver(dog);
+        assertEquals(1, webshop.getAnimalObservers().size());
+        assertEquals("Rex", webshop.getAnimalObservers().get(0).getName());
+    }
+
+    @Test
+    void testSellProduct() {
+        assertEquals(0, webshop.getSellables().size());
+        Product product = new Product("Dierenvoer", 5);
+        webshop.addProduct(product);
+        assertEquals(1, webshop.getSellables().size());
+        webshop.sellProduct(product);
+        assertEquals(0, webshop.getSellables().size());
+    }
 }
