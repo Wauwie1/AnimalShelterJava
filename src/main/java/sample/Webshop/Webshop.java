@@ -3,6 +3,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ListChangeListener;
 import javafx.collections.ObservableList;
 import sample.Animal.Animal;
+import sample.Database.DatabaseController;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -56,5 +57,13 @@ public class Webshop implements Serializable {
 
     public void sellProduct(Sellable sellable) {
         sellables.remove(sellable);
+    }
+
+    public void loadProductsDatabase(){
+        DatabaseController databaseController = new DatabaseController();
+        List<Product> databaseProducts = databaseController.loadProductsFromDatabase();
+        for (Product product: databaseProducts){
+            addProduct(product);
+        }
     }
 }

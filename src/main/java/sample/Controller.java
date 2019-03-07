@@ -8,6 +8,7 @@ import sample.Animal.Animal;
 import sample.Animal.AnimalFactory;
 import sample.Animal.Cat;
 import sample.Animal.Gender;
+import sample.Database.DatabaseController;
 import sample.Webshop.Product;
 import sample.Webshop.Sellable;
 import sample.Webshop.SellableFactory;
@@ -42,7 +43,12 @@ public class Controller implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
+
         initToggle();
+
+        webshop.loadProductsDatabase();
+        System.out.println(webshop.getSellables());
         lstWebshop.setItems(webshop.getSellables());
         webshop.getSellables().addListener((ListChangeListener) change -> lstWebshop.refresh());
     }
