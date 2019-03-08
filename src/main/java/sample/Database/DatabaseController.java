@@ -8,6 +8,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
+import java.util.concurrent.ThreadLocalRandom;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -47,8 +48,49 @@ public class DatabaseController {
         }
     }
 
-    public void saveToDatabase() {
+    public void saveToDatabase(List<Sellable> sellableList) {
+        try {
 
+            connection = DriverManager.getConnection(url);
+            Statement statement = connection.createStatement();
+
+            statement.setQueryTimeout(30);
+
+            statement.executeUpdate("DELETE FROM Products");
+
+            for (Sellable sellable: sellableList
+                 ) {
+
+                String randomId = Integer.toString(ThreadLocalRandom.current().nextInt(1, 100000 + 1));
+                String name = sellable.getName();
+                String price = Double.toString(sellable.getPrice());
+                String SQLStatement = String.format("INSERT INTO Products" +
+                        " VALUES(%s,'%s', %s)", randomId, name, price);
+                statement.executeUpdate(SQLStatement);
+            }
+
+        }catch(SQLException exception){
+            System.out.println(exception);
+        }finally {
+            closeConnection();
+        }
+    }
+
+    private void closeConnection() {
+        try {
+            if (connection != null) {
+                connection.close();
+            }
+        } catch (SQLException e) {
+            // connection close failed.
+            System.err.println(e);
+        }finally {
+            try {
+                input.close();
+            } catch (IOException exception) {
+                System.out.println(exception);
+            }
+        }
     }
 
     public List<Product> loadProductsFromDatabase() {
@@ -74,6 +116,8 @@ public class DatabaseController {
         } catch (SQLException exception) {
             System.out.println(exception);
             return null;
+        }finally {
+            closeConnection();
         }
     }
 }

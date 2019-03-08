@@ -43,14 +43,8 @@ public class Controller implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
-
         initToggle();
-
-        webshop.loadProductsDatabase();
-        System.out.println(webshop.getSellables());
-        lstWebshop.setItems(webshop.getSellables());
-        webshop.getSellables().addListener((ListChangeListener) change -> lstWebshop.refresh());
+        initWebshop();
     }
 
     private void initToggle() {
@@ -62,6 +56,12 @@ public class Controller implements Initializable {
         tglFemale.setUserData(Gender.Female);
     }
 
+    private void initWebshop() {
+        webshop.loadProductsDatabase();
+        System.out.println(webshop.getSellables());
+        lstWebshop.setItems(webshop.getSellables());
+        webshop.getSellables().addListener((ListChangeListener) change -> lstWebshop.refresh());
+    }
     public void btnAddAnimal_Click(ActionEvent actionEvent) {
         addAnimal();
     }
