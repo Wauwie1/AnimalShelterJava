@@ -3,6 +3,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ListChangeListener;
 import javafx.collections.ObservableList;
 import sample.Animal.Animal;
+import sample.Database.DatabaseController;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -13,6 +14,8 @@ public class Webshop implements Serializable {
     private List<Sellable> sellableList = new ArrayList<Sellable>();
     private ObservableList<Sellable> sellables;
     private List<Animal> animalObservers = new ArrayList<Animal>();
+    private DatabaseController databaseController = new DatabaseController();
+    private boolean isFirstLoad = true;
 
     public List<Animal> getAnimalObservers() {
         return animalObservers;
@@ -35,12 +38,14 @@ public class Webshop implements Serializable {
         SellableFactory sellableFactory = new SellableFactory();
         Sellable product = sellableFactory.MakeSellable("Product", name, price);
         sellables.add(product);
-        notifyObservers();
+        saveToDatabase();
     }
 
     public void addProduct(Product product) {
         sellables.add(product);
-        notifyObservers();
+        if(!isFirstLoad) {
+            saveToDatabase();
+        }
     }
 
 
@@ -56,5 +61,19 @@ public class Webshop implements Serializable {
 
     public void sellProduct(Sellable sellable) {
         sellables.remove(sellable);
+        saveToDatabase();
+    }
+
+    public void loadProductsDatabase(){
+
+        List<Product> databaseProducts = databaseController.loadProductsFromDatabase();
+        for (Product product: databaseProducts){
+            addProduct(product);
+        }
+        isFirstLoad = false;
+    }
+
+    private void saveToDatabase() {
+        databaseController.saveToDatabase(sellableList);
     }
 }

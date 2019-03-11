@@ -1,6 +1,7 @@
-module FUN3_Factorial {
+module AnimalShelterJava {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.sql;
     opens sample;
     exports sample;
 }

@@ -1,0 +1,4 @@
+jdbc.password=na
+jdbc.username=na
+jdbc.url=jdbc\:sqlite\:sample.db
+jdbc.drivers=org.sqlite.JDBC
