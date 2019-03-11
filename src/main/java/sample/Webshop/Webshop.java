@@ -38,13 +38,11 @@ public class Webshop implements Serializable {
         SellableFactory sellableFactory = new SellableFactory();
         Sellable product = sellableFactory.MakeSellable("Product", name, price);
         sellables.add(product);
-        notifyObservers();
         saveToDatabase();
     }
 
     public void addProduct(Product product) {
         sellables.add(product);
-        notifyObservers();
         if(!isFirstLoad) {
             saveToDatabase();
         }
